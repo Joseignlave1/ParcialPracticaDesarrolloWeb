@@ -1,0 +1,118 @@
+.home_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+#home_title {
+    margin: 1rem 0;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.card_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem 2rem;
+    justify-items: center;
+    width: 100%;
+}
+
+.card {
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: box-shadow 0.3s ease;
+}
+
+.card h3 {
+    margin: 0.5rem 0;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.card button {
+    width: 100%; /* Ocupa todo el ancho de la tarjeta */
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#add_game_button {
+    width: 8rem; /* Ocupa todo el ancho de la tarjeta */   
+    height: 2rem; 
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    background-color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilo para botón de Details */
+#details_button {
+    background-color: #007bff;
+    margin-bottom: 10px; /* Espacio entre botones */
+}
+
+#details_button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo para botón de Delete */
+#delete_button {
+    background-color: #ff4d4d;
+}
+
+#delete_button:hover {
+    background-color: #cc0000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .home_container {
+        padding: 1.5rem;
+    }
+
+    #home_title {
+        font-size: 1.3rem;
+    }
+
+    .card_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .home_container {
+        padding: 1rem;
+    }
+
+    #home_title {
+        font-size: 1.2rem;
+    }
+
+    .card_container {
+        grid-template-columns: 1fr;
+    }
+
+    .card h3 {
+        font-size: 1rem;
+    }
+}
