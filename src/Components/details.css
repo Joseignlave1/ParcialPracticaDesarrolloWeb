@@ -36,7 +36,6 @@
     font-size: 1.2rem;
 }
 
-/* Estilo responsivo */
 @media (max-width: 768px) {
     .details_container {
         padding: 1.5rem;

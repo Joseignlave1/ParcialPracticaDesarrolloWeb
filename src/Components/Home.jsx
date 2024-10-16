@@ -37,7 +37,7 @@ const Home = () => {
           </button>
         </div>
         <div className="card_container">
-          {games &&
+          {games.length ?
             games.map((game) => {
               return (
                 <div className="card" key={game.id}>
@@ -58,7 +58,9 @@ const Home = () => {
                   </div>
                 </div>
               );
-            })}
+            }) : (
+              <h2 className="home_no_games">No hay juegos para mostrar</h2>
+            )}
         </div>
       </div>
     );
